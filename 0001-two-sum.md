@@ -1,4 +1,4 @@
-# 0001. Two Sum
+# 1. Two Sum
 
 **Difficulty:** Easy  
 **Topics:** Array, Hash Table  
@@ -7,7 +7,6 @@
 ---
 
 ## Solution 1 - Hash Map
----
 
 ### Complexity Analysis
 
@@ -47,12 +46,6 @@ public:
 ---
 
 ## Solution 2 - Brute Force
-
-### Approach
-
-Check every possible pair of numbers and compare their sum with the target.
-
----
 
 ### Complexity Analysis
 
