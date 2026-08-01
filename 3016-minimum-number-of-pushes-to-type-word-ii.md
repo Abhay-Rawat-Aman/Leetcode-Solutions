@@ -20,7 +20,9 @@
 ### C++ Code
 
 ```cpp
-int minimumPushes(string word) {
+class Solution {
+public:
+    int minimumPushes(string word) {
         vector<int> a(26,0);
         for(int i=0;word[i];i++)
             a[word[i]-'a']++;
@@ -46,5 +48,6 @@ int minimumPushes(string word) {
         }
         return ans;
     }
+};
 ```
 
