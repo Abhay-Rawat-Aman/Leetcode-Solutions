@@ -1,7 +1,7 @@
 # 2. Minimum Number of Pushes to Type Word II
 
 **Difficulty:** Medium  
-**Topics:** Array, Priority Queue 
+**Topics:** Array, Priority Queue  
 **LeetCode:** https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/description/
 
 ---
