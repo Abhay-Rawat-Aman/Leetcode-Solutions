@@ -37,8 +37,6 @@ public:
             int firstVal = (1<<level);
             pos = abs(label - firstVal) + 1;
         }
-        cout<<pos<<" ";
-        // pos = 27;
         for(int i=level-1;i>=0;i--)
         {
              if(pos%2==0)
