@@ -1,4 +1,4 @@
-# 2. Minimum Number of Pushes to Type Word II
+# 3016. Minimum Number of Pushes to Type Word II
 
 **Difficulty:** Medium  
 **Topics:** Array, Priority Queue  
