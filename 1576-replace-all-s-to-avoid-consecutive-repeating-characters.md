@@ -1,4 +1,4 @@
-# 119. Pascal's Triangle II
+# 1576. Replace All ?'s to Avoid Consecutive Repeating Characters
 
 **Difficulty:** Easy  
 **Topics:** String   
