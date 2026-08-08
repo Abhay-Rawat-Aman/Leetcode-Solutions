@@ -12,7 +12,7 @@
 
 | Metric | Complexity |
 |--------|------------|
-| Time Complexity | `O(n)` |
+| Time Complexity | `O(1)` |
 | Space Complexity | `O(n)` |
 
 ---
