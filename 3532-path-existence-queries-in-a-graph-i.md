@@ -59,3 +59,49 @@ public:
     }
 };
 ```
+
+---
+
+## Solution 2 - Graph, component
+
+### Complexity Analysis
+
+| Metric | Complexity |
+|--------|------------|
+| Time Complexity | `O(n)` |
+| Space Complexity | `O(n)` |
+
+---
+
+### C++ Code
+
+```cpp
+class Solution {
+public:
+    vector<bool> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& queries) {
+        vector<bool> ans;
+        vector<int> component(n,-1);
+        int val = 1;
+        component[0] = val;
+        for(int i=1;i<nums.size();i++)
+        {
+            if(nums[i]-nums[i-1]>maxDiff)
+                val++;
+            component[i] = val;
+        }
+        for(int i=0;i<queries.size();i++)
+        {
+            int node1 = queries[i][0]<queries[i][1]?queries[i][0]:queries[i][1];
+            int node2 = queries[i][0]>queries[i][1]?queries[i][0]:queries[i][1];
+            ans.push_back(component[node1] == component[node2]);
+        }
+        return ans; 
+    }
+    int find(vector<int> &parent,int node)
+    {
+        if(parent[node]==-1)
+            return node;
+        return parent[node];         
+    }
+};
+```
